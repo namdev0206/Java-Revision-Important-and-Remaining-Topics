@@ -1,0 +1,64 @@
+//To Create the new Folder
+create DATABASE (Folder Name)
+
+
+//To create the Table in SQL
+create table (Folder Name)
+(
+	roll int,
+	name varchar(15),
+	marks float,
+	DOJ date
+);
+
+
+//To check the Datatypes of Table
+desc (Folder Name);
+
+
+//To insert the Data in the Table
+INSERT INTO login (usern, userp)
+VALUES ('Panchal', 'Panchal@123');
+
+
+//To check the Table in SQL
+select * from (Folder Name);
+
+
+//To Display only Name from the Table
+select name from (Folder Name);
+
+
+//To select the Particular DAta in SQL with Condition
+select * from (Folder Name) where roll = 10
+
+
+//To Display the Name with Roll no. 10 in Table 
+select * name from (Folder Name) where roll = 10
+
+
+//To delete the Data from the Table in SQL with Condition
+delete from (Folder Name) where roll = 10
+
+
+//AND & OR in the table
+select * from (Folder Name) where Emp_no >= 100 and Emp_no <= 400
+select * from (Folder Name) where Client_no = 'C002' or Client_no = 'C006' or Client_no = 'C012'
+
+
+//For the Difference between two Column or Data
+select Price(Column Name) - Complaint_no(Column Name) AS Difference(New Column Name) from (Folder Name)
+
+
+//To Select the Particular Field in the Table with Condition
+select EName, Dept, Basic from details where ECode='E001' or ECode='E006'
+
+
+
+//select * from details where Dept = 'Computer' or Dept = 'Sales'
+
+//select Basic + DA AS Total_Salary from details
+
+//select (Basic * 75) / 100 AS HRA from details;
+
+//select Basic + DA + ((Basic * 75) / 100) AS Gross_AMT from details;
